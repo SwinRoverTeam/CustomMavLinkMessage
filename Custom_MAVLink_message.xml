@@ -1,0 +1,11 @@
+<message id="9214" name="RFID_CONTROL">
+<!-- All Swinburne number starts with 9214 :) /> -->
+  <description>Message to control RFID reader</description>
+  <field type="uint8_t" name="target_system">System ID</field>
+  <field type="uint8_t" name="target_component">Component ID</field>
+  <field type="uint8_t" name="command">RFID command (1 for read, 0 for off)</field>
+  <field type="uint16_t" name="pause_duration">Duration to pause in seconds (applicable if command is 2)</field>
+</message>
+<!-- More messages if we want /> -->
+
+<!-- We could add more command to the RFID command above, such as 2 for pausing and 3 for writing all the data into a file and send it back to our computer /> -->
