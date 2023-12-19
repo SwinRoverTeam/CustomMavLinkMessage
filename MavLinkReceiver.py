@@ -1,7 +1,7 @@
 import sys
 sys.path.append("path/to/generated/mavlinkv2")  
 from pymavlink import mavutil
-from custom_messages import MAVLink_rfid_control_message  # Replace with your actual library name and class
+from custom_messages import MAVLink_rfid_control_message  # Replace with our actual library name and class
 
 # Establish a MAVLink connection (change this string depends on our Rover)
 connection = mavutil.mavlink_connection('/dev/ttyAMA0', baud=57600)  # Serial connection example
